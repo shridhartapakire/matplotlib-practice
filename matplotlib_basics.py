@@ -39,3 +39,28 @@ plt.xlabel("X Values")
 plt.ylabel("Y Values")
 
 plt.show()
+
+# -------- Subplots Example --------
+
+import matplotlib.pyplot as plt
+
+# Data
+x = [1, 2, 3, 4, 5]
+y_line = [10, 20, 25, 30, 40]
+y_bar = [5, 15, 20, 25, 30]
+
+# Create subplots (1 row, 2 columns)
+plt.figure(figsize=(10, 4))
+
+# First subplot - Line
+plt.subplot(1, 2, 1)
+plt.plot(x, y_line, color='blue', marker='o')
+plt.title("Line Plot")
+
+# Second subplot - Bar
+plt.subplot(1, 2, 2)
+plt.bar(x, y_bar, color='orange')
+plt.title("Bar Chart")
+
+plt.tight_layout()
+plt.show()
