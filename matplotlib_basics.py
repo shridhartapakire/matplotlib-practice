@@ -64,3 +64,20 @@ plt.title("Bar Chart")
 
 plt.tight_layout()
 plt.show()
+
+# -------- Histogram --------
+
+import matplotlib.pyplot as plt
+
+# Sample data
+expenses = [100, 200, 150, 300, 250, 400, 350, 200, 150, 300]
+
+plt.figure()
+
+plt.hist(expenses, bins=5)
+
+plt.title("Expense Distribution")
+plt.xlabel("Amount")
+plt.ylabel("Frequency")
+
+plt.show()
